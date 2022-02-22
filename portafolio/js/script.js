@@ -13,7 +13,7 @@ function animateValue(obj, start, end, duration) {
   
   
   const obj = document.getElementById("value");
-  animateValue(obj, 0, 7, 500);
+  animateValue(obj, 0, 7, 1000);
 
   const obj2 = document.getElementById("value2");
   animateValue(obj2, 0, 32, 1000);
