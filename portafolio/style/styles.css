@@ -1,4 +1,28 @@
 /* Estilos generales */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
 body{
     background: #FAFAFA;
 }
@@ -28,6 +52,7 @@ p{
 
 label{
     color: #120E48;
+    margin: 20px 0 0 0;
 }
 
 .align-between{
@@ -55,6 +80,7 @@ label{
 /* Navbar menu */
 
 .position-sticky{
+    z-index: 100;
     top: 0;
     background: #fafafa;
     padding: 10px;
@@ -403,8 +429,9 @@ a:hover, .nav-link:focus, .nav-link:hover, a.active{
 }
 
 input, textarea{
-    border: 1px solid #C9C9C9;
-    margin: 0 0 20px 0;
+    border: 2px solid #C9C9C9;
+    background: white;
+    color: #535353;
     padding: 15px;
     border-radius: 30px;
     transition: all ease-in-out 0.5s;
@@ -412,9 +439,74 @@ input, textarea{
 
 input:focus-visible, textarea:focus-visible{
     border-radius: 30px;
-    border: 1px solid #7D89EF;
+    border: 2px solid #7D89EF;
     outline: none;
     background: #f2f3ff;
+}
+
+.formulario__group-input input, textarea{
+    width: 100%;
+}
+
+.formulario__validacion-error, .formulario__icono-error{
+    color: #ff2d2d;
+}
+
+.formulario__validacion-error{
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__validacion-error-activo{
+    display: block;
+}
+
+.formulario__group-input{
+    position: relative;
+}
+
+.formulario__icono-error{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99;
+    opacity: 0;
+}
+
+.formulario__mensaje{
+    height: 45px;
+    line-height: 45px;
+    vertical-align: middle;
+    background: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    margin: 0 0 15px 0;
+    display: none;
+}
+
+.formulario__mensaje-activo{
+    display: block;
+}
+
+.formulario__mensaje p{
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+}
+
+.formulario__mensaje span{
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+
+.formulario__mensaje-exito{
+    font-size: 16px;
+    color: #119200;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo{
+    display: block;
 }
 
 .img-contact{
@@ -442,6 +534,26 @@ footer{
 .footer p, .footer h6{
     margin: 0;
     font-size: 14px;
+}
+
+/*Estilos para validación*/
+.formulario__grupo-correcto .formulario__icono-error{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto label{
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__icono-error{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__group-input input{
+    border: 2px solid #bb2929;
+    opacity: 1;
 }
 
 /* Estilos responsive */

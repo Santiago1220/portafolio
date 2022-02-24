@@ -30,22 +30,3 @@ function animateValue(obj, start, end, duration) {
         $(this).addClass('active');
     });
 });
-
-
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyA_vYT-t-9D6oHBx2U6Sx-9gaObRq8xKmU",
-  authDomain: "portafolio-santiago-restrepo.firebaseapp.com",
-  projectId: "portafolio-santiago-restrepo",
-  storageBucket: "portafolio-santiago-restrepo.appspot.com",
-  messagingSenderId: "185387558411",
-  appId: "1:185387558411:web:2a4cc26892d7c40551090e"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
