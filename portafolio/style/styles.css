@@ -465,6 +465,10 @@ input:focus-visible, textarea:focus-visible{
     position: relative;
 }
 
+.fomulario__input-mensaje{
+    height: 100px;
+}
+
 .formulario__icono-error{
     position: absolute;
     right: 20px;
@@ -551,7 +555,7 @@ footer{
     opacity: 1;
 }
 
-.formulario__grupo-incorrecto .formulario__group-input input{
+.formulario__grupo-incorrecto .formulario__group-input input, .formulario__grupo-incorrecto .formulario__group-input textarea{
     border: 2px solid #bb2929;
     opacity: 1;
 }
