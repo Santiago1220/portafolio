@@ -13,7 +13,7 @@ function animateValue(obj, start, end, duration) {
 
 
 const obj = document.getElementById("value");
-animateValue(obj, 0, 7, 1000);
+animateValue(obj, 0, 8, 1000);
 
 const obj2 = document.getElementById("value2");
 animateValue(obj2, 0, 32, 1000);
@@ -57,16 +57,16 @@ $('a[href^="#"]').on('click', function (e) {
 });
 
 function onScroll(event){
-var scrollPos = $(document).scrollTop();
-$('#navbarNav a').each(function () {
-    var currLink = $(this);
-    var refElement = $(currLink.attr("href"));
-    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-        $('#navbarNav ul li a').removeClass("active");
-        currLink.addClass("active");
-    }
-    else{
-        currLink.removeClass("active");
-    }
-});
+  var scrollPos = $(document).scrollTop();
+  $('#navbarNav a').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('#navbarNav ul li a').removeClass("active");
+          currLink.addClass("active");
+      }
+      else{
+          currLink.removeClass("active");
+      }
+  });
 }
