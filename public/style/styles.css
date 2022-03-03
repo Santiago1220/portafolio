@@ -429,6 +429,18 @@ a:hover, .nav-link:focus, .nav-link:hover, a.active{
     margin: 10px 0;
 }
 
+.img-contact{
+    position: absolute;
+    left: -30px;
+    top: 10px;
+}
+
+.contact-info{
+    padding-left: 100px;
+}
+
+/* Estilos formulario validación */
+
 input, textarea{
     border: 2px solid #C9C9C9;
     background: white;
@@ -487,10 +499,12 @@ input:focus-visible, textarea:focus-visible{
     border-radius: 3px;
     margin: 0 0 15px 0;
     display: none;
+    transition: all ease-in-out 0.5s;
 }
 
 .formulario__mensaje-activo{
     display: block;
+    transition: all ease-in-out 0.5s;
 }
 
 .formulario__mensaje p{
@@ -505,43 +519,28 @@ input:focus-visible, textarea:focus-visible{
 }
 
 .formulario__mensaje-exito{
-    font-size: 16px;
-    color: #119200;
+    height: 45px;
+    line-height: 45px;
+    vertical-align: middle;
+    background: #89ffb7;
+    padding: 0 15px;
+    border-radius: 3px;
+    margin: 0 0 15px 0;
     display: none;
+    transition: all ease-in-out 0.5s;
+}
+
+.formulario__mensaje-exito p span{
+    vertical-align: middle;
 }
 
 .formulario__mensaje-exito-activo{
     display: block;
-}
-
-.img-contact{
-    position: absolute;
-    left: -30px;
-    top: 10px;
-}
-
-.contact-info{
-    padding-left: 100px;
-}
-
-footer{
-    background: #fff;
-    padding: 20px 0;
-    margin: 50px 0 0 0;
-}
-
-.footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer p, .footer h6{
-    margin: 0;
-    font-size: 14px;
+    transition: all ease-in-out 0.5s;
 }
 
 /*Estilos para validación*/
+
 .formulario__grupo-correcto .formulario__icono-error{
     color: #1ed12d;
     opacity: 1;
@@ -559,6 +558,25 @@ footer{
 .formulario__grupo-incorrecto .formulario__group-input input, .formulario__grupo-incorrecto .formulario__group-input textarea{
     border: 2px solid #bb2929;
     opacity: 1;
+}
+
+/* Estilos del footer */
+
+footer{
+    background: #fff;
+    padding: 20px 0;
+    margin: 50px 0 0 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p, .footer h6{
+    margin: 0;
+    font-size: 14px;
 }
 
 /* Estilos responsive */
