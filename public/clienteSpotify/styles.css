@@ -1,0 +1,296 @@
+body{
+    background: #272727;
+    overflow-x: hidden;
+    height: 100vh;
+}
+.card{
+    padding: 10px;
+}
+
+audio{
+    width: 100%;
+    height: 40px;
+}
+
+h1, h2, h3, h4, h5, h6, button, a, label{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 58px;
+}
+
+h6{
+    height: 20px;
+    font-size: 14px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+p{
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.card{
+    background: #131313;
+}
+
+.card img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.cont-image{
+    display: flex;
+    justify-content: center;
+}
+
+.theme-krajee-svg.rating-md .krajee-icon, .theme-krajee-svg.rating-md .krajee-icon-clear {
+    width: 1rem;
+    height: 1rem;
+}
+
+.theme-krajee-svg .filled-stars .krajee-icon-star {
+    background-image: url(img/fillstar.png);
+}
+
+.theme-krajee-svg .empty-stars .krajee-icon-star {
+    background-image: url(img/nofillstar.png);
+}
+
+.portada{
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.portada img{
+    width: 100%;
+}
+
+.absolute-title{
+    position: absolute;
+    top: 10%;
+    left: 40px;
+}
+
+.btn-follow{
+    position: absolute;
+    top: 15%;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 30px;
+    right: 40px;
+    border: none;
+    background: #ff941a;
+    border-radius: 30px;
+    color: #131313;
+}
+
+.top{
+    position: absolute;
+    top: 42%;
+    left: 40px;
+}
+
+#fila{
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+}
+
+.biografia, .albums{
+    margin: 45px 0 0 0;
+}
+
+.biografia h2, .albums h2{
+    margin: 0 0 30px 0;
+}
+
+.biografia article{
+    line-height: 30px;
+    width: 60%;
+}
+
+.about-kase img{
+    position: relative;
+    right: -20px;
+    height: 350px;
+}
+
+.square-cont{
+    position: relative;
+}
+
+.square{
+    position: absolute;
+    width: 300px;
+    right: -60px;
+    top: -40px;
+    height: 300px;
+    background: #060606;
+}
+
+.single-albums{
+    display: flex;
+}
+
+.single-albums .album{
+    margin: 0 20px 0 0;
+}
+
+.album h5{
+    margin: 10px 0 0 0;
+}
+
+.album img{
+    width: 230px;
+}
+
+#wrapper {
+    width: 100%;
+    position: relative;
+    margin: 20px 20px 20px 40px;
+    top: -250px;
+}
+  
+  #carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  
+  #carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  
+  #prev,
+  #next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  #prev {
+    top: -30px;
+    left: -15px;
+    transform: translate(50%, -50%);
+  }
+  
+  
+  #next {
+    top: -30px;
+    left: 90px;
+    transform: translate(-50%, -50%);
+  }
+  
+  #content {
+    display: grid;
+    grid-gap: 5px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  .item {
+    width: 290px;
+    height: 300px;
+  }
+
+  footer{
+    padding: 20px 0;
+    margin: 80px 0 0 0;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+}
+
+.footer p{
+    margin: 0;
+}
+
+.footer h6{
+    margin:  0 0 0 10px;
+}
+
+.footer img{
+    height: 25px;
+    margin:  0 0 0 10px;
+}
+
+@media (max-width: 1920px) and (min-width: 1400px){
+    .portada{
+        margin-bottom: 100px;
+    }
+    .absolute-title{
+        left: 40px;
+    }
+
+    .about-kase img{
+        right: -120px;
+    }
+
+    .square{
+        right: -160px;
+    }
+
+    #wrapper{
+        max-width: 1500px;
+    }
+
+    .top{
+        top: 52%;
+    }
+}
+
+@media (max-width: 720px) and (min-width: 360px){
+    #wrapper{
+        width: 500px;
+        top: 0;
+    }
+
+    .portada{
+        margin-bottom: -190px;
+    }
+
+    .portada img{
+        width: auto;
+    }
+
+    .single-albums {
+        flex-wrap: wrap;
+    }
+
+    .btn-follow {
+        top: 14%;
+        right: -150px;
+    }
+
+    .about-kase{
+        flex-direction: column;
+    }
+
+    .biografia article{
+        width: 100%;
+    }
+
+    .about-kase img {
+        right: -60px;
+    }
+
+    .square {
+        right: 50px;
+        top: -10px;
+    }
+}
